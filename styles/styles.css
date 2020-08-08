@@ -7,6 +7,14 @@
     transform: translate(-50%, -50%);
 }
 
+@media (max-width: 28.75em) {
+    #container {
+      width: 100%;
+      height: auto;
+      top: 30%;
+    }
+}
+
 .header {
     background-image: linear-gradient(0deg, #343A40 0%, #121212 100%);
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -20,6 +28,10 @@ h2 {
     color: red;
     font-weight: 1000;
     font-family: 'Indie Flower', cursive;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 input[type="text"] {
@@ -46,7 +58,6 @@ ul {
     padding: 0;
   }
   
-  /* Style the list items */
   ul li {
     cursor: pointer;
     position: relative;
@@ -56,31 +67,26 @@ ul {
     font-size: 18px;
     transition: 0.2s;
     
-    /* make the list items unselectable */
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
   }
   
-  /* Set all odd list items to a different color (zebra-stripes) */
   ul li:nth-child(odd) {
     background: #f9f9f9;
   }
   
-  /* Darker background-color on hover */
   ul li:hover {
     background: #ddd;
   }
   
-  /* When clicked on, add a background color and strike out text */
   ul li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
   }
   
-  /* Add a "checked" mark when clicked on */
   ul li.checked::before {
     content: '';
     position: absolute;
@@ -94,15 +100,14 @@ ul {
     width: 7px;
   }
   
-  /* Style the close button */
   .close {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 12px 16px 12px 16px;
+    padding: 12px 30px 12px 30px;
   }
   
   .close:hover {
-    background-color: #f44336;
+    background-color: #ff0000;
     color: white;
   }
